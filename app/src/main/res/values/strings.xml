@@ -121,4 +121,15 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="title_activity_evaluacion">Evaluacion</string>
+    <string name="Rutatxt">Ruta (Normalmente como R-51 D, insertar solo 51 D)</string>
+    <string name="Unidadtxt">Unidad (Normalmente como S-1234, insertar S-1234)</string>
+    <string name="Fechatxt">Fecha y Hora</string>
+    <string name="Asuntotxt">Asunto</string>
+    <string name="Fechabtn">Fecha</string>
+    <string name="Horabtn">Hora</string>
+    <string name="txtAceptar">Aceptar</string>
+    <string name="txtCancelar">Cancelar</string>
+    <string name="Higiene">Higiene</string>
+    <string name="Servicio">Servicio</string>
+    <string name="Espacio">Espacio</string>
 </resources>

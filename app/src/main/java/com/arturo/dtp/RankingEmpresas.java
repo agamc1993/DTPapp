@@ -3,6 +3,7 @@ package com.arturo.dtp;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 public class RankingEmpresas extends AppCompatActivity {
@@ -13,8 +14,8 @@ public class RankingEmpresas extends AppCompatActivity {
         setContentView(R.layout.activity_ranking_empresas);
 
         WebView webview = (WebView) findViewById(R.id.webViewRankingEmpresas);
-        setContentView(webview);
-
-        webview.loadUrl("peritajeag.com");
+        WebSettings webSettings = webview.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webview.loadUrl("http://www.peritajeag.com");
     }
 }

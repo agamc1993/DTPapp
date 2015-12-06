@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.arturo.dtp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,30 +16,15 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
             </intent-filter>
         </activity>
         <activity
             android:name=".login"
             android:label="@string/title_activity_login" />
         <activity android:name=".RankingEmpresas" />
-        <activity
-            android:name=".Reporte"
-            android:label="@string/title_activity_reporte"
-            android:parentActivityName=".DTP"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.arturo.dtp.DTP" />
-        </activity>
-        <activity
-            android:name=".Evaluacion"
-            android:label="@string/title_activity_evaluacion"
-            android:parentActivityName=".DTP"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.arturo.dtp.DTP" />
-        </activity>
+        <activity android:name=".Reporte" />
+        <activity android:name=".Evaluacion"></activity>
     </application>
 
 </manifest>

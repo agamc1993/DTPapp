@@ -69,27 +69,32 @@ public class DTP extends AppCompatActivity
                 .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
                 .commit();
     }
+    Intent i=new Intent();
 
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.tituloReporte);
                 break;
             case 2:
-                mTitle = getString(R.string.tituloCalificacion);
-                break;
-            case 3:
-                mTitle = getString(R.string.tituloRUnidades);
-                break;
-            case 4:
-                mTitle = getString(R.string.tituloRRutas);
-                break;
-            case 5:
-                mTitle = getString(R.string.TituloREmpresas);
-                Intent i = new Intent(getApplicationContext(), RankingEmpresas.class);
+                mTitle = getString(R.string.tituloReporte);
+                i = new Intent(getApplicationContext(), Reporte.class);
                 startActivity(i);
                 break;
+            case 3:
+                mTitle = getString(R.string.tituloCalificacion);
+                break;
+            case 4:
+                mTitle = getString(R.string.tituloRUnidades);
+                break;
+            case 5:
+                mTitle = getString(R.string.tituloRRutas);
+                break;
             case 6:
+                mTitle = getString(R.string.TituloREmpresas);
+                i = new Intent(getApplicationContext(), RankingEmpresas.class);
+                startActivity(i);
+                break;
+            case 7:
                 mTitle = getString(R.string.tituloConfiguracion);
                 break;
         }
