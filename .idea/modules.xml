@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DTP.iml" filepath="$PROJECT_DIR$/DTP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DTPapp.iml" filepath="$PROJECT_DIR$/DTPapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
