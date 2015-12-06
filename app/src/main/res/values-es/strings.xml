@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DTP</string>
+    <string name="txtTelefono">Teléfono</string>
+    <string name="txtPassword">Contraseña</string>
+    <string name="btnLogin">Acceder</string>
+    <string name="btnSignUp">Registro</string>
+</resources>

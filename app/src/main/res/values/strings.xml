@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">DTP</string>
+
+    <string name="title_section1" translatable="false">Section 1</string>
+    <string name="title_section2" translatable="false">Section 2</string>
+    <string name="title_section3" translatable="false">Section 3</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="action_example" translatable="false">Example action</string>
+
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="txtTelefono">Teléfono</string>
+    <string name="txtPassword">Contraseña</string>
+    <string name="btnLogin">Acceder</string>
+    <string name="btnSignUp">Registrarse</string>
+    <string name="title_activity_login">login</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="nuevoReporte">Reporte</string>
+    <string name="nuevaCalificacion">Evaluar</string>
+    <string name="RankingUnidades">Ranking de Unidades</string>
+    <string name="RankingRutas">Ranking de Rutas</string>
+    <string name="RankingEmpresas">Ranking de Empresas</string>
+    <string name="Configuracion">Configuración</string>
+    <string name="tituloReporte">Reporte</string>
+    <string name="tituloCalificacion">Evaluación</string>
+    <string name="tituloRUnidades">Ranking</string>
+    <string name="tituloRRutas">Ranking</string>
+    <string name="TituloREmpresas">Ranking</string>
+    <string name="tituloConfiguracion">Configuración</string>
+</resources>
