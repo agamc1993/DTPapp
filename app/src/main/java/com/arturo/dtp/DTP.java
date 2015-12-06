@@ -3,6 +3,7 @@ package com.arturo.dtp;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.service.notification.NotificationListenerService;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -85,6 +86,8 @@ public class DTP extends AppCompatActivity
                 break;
             case 5:
                 mTitle = getString(R.string.TituloREmpresas);
+                Intent i = new Intent(getApplicationContext(), RankingEmpresas.class);
+                startActivity(i);
                 break;
             case 6:
                 mTitle = getString(R.string.tituloConfiguracion);
