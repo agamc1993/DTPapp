@@ -69,20 +69,38 @@ public class login extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    /*
-                    *
-                    *
-                    *
-                    * aqui lo debes poner memo
-                    *
-                    *
-                    * */
-                    SharedPreferences.Editor editor = configuracion.edit();
+
+                    StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://dtpapp.esy.es/u_insert.php",
+                            new Response.Listener<String>() {
+                                @Override
+                                public void onResponse(String response) {
+                                    Toast.makeText(getApplicationContext(), response, Toast.LENGTH_SHORT).show();
+                                }
+                            }, new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Toast.makeText(getApplicationContext(), error.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                        }
+                    }) {
+                        @Override
+                        protected Map<String, String> getParams() {
+                            Map<String, String> params = new HashMap<String, String>();
+                            params.put("u_tel", txtTelefono.getText().toString());
+                            params.put("u_pass", txtPassword.getText().toString());
+                            return params;
+                        }
+                    };
+
+                    RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+                    requestQueue.add(stringRequest);
+
+
+                    /*SharedPreferences.Editor editor = configuracion.edit();
                     editor.putString("telefono", telefonoCampo);
                     editor.putString("password", passwordCampo);
                     editor.commit();
                     Toast.makeText(getApplicationContext(), configuracion.getString("telefono", "").toString()+" registrado correctamente",
-                            Toast.LENGTH_SHORT).show();
+                            Toast.LENGTH_SHORT).show();*/
                 }
             }
         });
