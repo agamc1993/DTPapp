@@ -11,6 +11,24 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Cache;
+import com.android.volley.Network;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.BasicNetwork;
+import com.android.volley.toolbox.DiskBasedCache;
+import com.android.volley.toolbox.HurlStack;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class login extends AppCompatActivity {
     SharedPreferences configuracion;
     TextView txtTelefono, txtPassword;
@@ -51,10 +69,17 @@ public class login extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                 }
                 else {
+                    /*
+                    *
+                    *
+                    *
+                    * aqui lo debes poner memo
+                    *
+                    *
+                    * */
                     SharedPreferences.Editor editor = configuracion.edit();
                     editor.putString("telefono", telefonoCampo);
                     editor.putString("password", passwordCampo);
-                    //   	editor.putInt("tiempo", value)
                     editor.commit();
                     Toast.makeText(getApplicationContext(), configuracion.getString("telefono", "").toString()+" registrado correctamente",
                             Toast.LENGTH_SHORT).show();
